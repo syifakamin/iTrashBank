@@ -6,7 +6,7 @@
 <p> We hope this Waste Bank System can help performance and synergize with the Waste Bank Community </p>
 </div>
 
-### Fitur yang ada di project ini
+### Fitur yang ada di project ini / The feature on this project
 - Login, Registrasi dan Otentikasi (Coming Soon)
 - Profil Pengguna (Coming Soon)
 - Pemantauan Stock Sampah (Coming Soon)
@@ -34,8 +34,19 @@ sudah menginstall semua ini di environment / Has Install all environment
 ## VS Code Extension
 - Laravel Extension Pack : [Extension Pack](https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-extension-pack)
 
-## LICENSE
+## Instruksi Pemasangan / Installing Instruction
+- Salin .env.example ke file .env, dan edit semau anda. dan eksekusi perintah ini. 
+- Copy .env.example to .env file, and edit as you want. and then do this command.
+```
+$ Composer install
+$ npm install
+$ php artisan key:generate
+$ php artisan serve
+```
+
+
+## LISENSI / LICENSE
 Dengan berkontribusi, anda sudah sepakat dengan kontribusi dari anda sendiri dibawah lisensi yang sudah tertera [Creative Commons Zero v1.0 Universal](LICENSE) License.
 
-## Contributors
-[Contributing Guide](contributing.md)
+## Kontributor / Contributors
+[Panduan Kontributor / Contributing Guide](contributing.md)
