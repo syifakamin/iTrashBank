@@ -7,19 +7,19 @@
 </div>
 
 ### Fitur yang ada di project ini
-- Login, Registrasi dan Otentikasi
-- Profil Pengguna
-- Pemantauan Stock Sampah
-- Setoran Sampah
-- Penarikan Sampah
-- Point dan Insentif
-- Riwayat Transaksi
-- Notifikasi dan Pemberitahuan
-- Peta Lokasi Setoran
-- Laporan dan Analisis
-- Panduan daur ulang sampah
-- Feedback User
-- Integrasi Pembayaran (Bisa dengan strips, midtrans atau yang lain.)
+- Login, Registrasi dan Otentikasi (Coming Soon)
+- Profil Pengguna (Coming Soon)
+- Pemantauan Stock Sampah (Coming Soon)
+- Setoran Sampah (Coming Soon)
+- Penarikan Sampah (Coming Soon)
+- Point dan Insentif (Coming Soon)
+- Riwayat Transaksi (Coming Soon)
+- Notifikasi dan Pemberitahuan (Coming Soon)
+- Peta Lokasi Setoran (Coming Soon)
+- Laporan dan Analisis (Coming Soon)
+- Panduan daur ulang sampah (Coming Soon)
+- Feedback User (Coming Soon)
+- Integrasi Pembayaran (Coming Soon)
 
 ## Prasyarat / Prerequisite
 sudah menginstall semua ini di environment / Has Install all environment
