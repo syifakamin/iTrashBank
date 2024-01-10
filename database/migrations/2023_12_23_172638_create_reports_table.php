@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('reports', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id')->index('user_deposits_user_id_foreign_idx');
-            $table->text('report_content');
+            $table->integer('user_id')->index('user_deposits_user_id_foreign_idx')->nullable();
+            $table->text('report_content')->nullable();
             $table->timestamps();
         });
     }

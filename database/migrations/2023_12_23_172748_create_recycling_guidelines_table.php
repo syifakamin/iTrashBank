@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('recycling_guidelines', function (Blueprint $table) {
             $table->id();
-            $table->integer('waste_type_id')->index('user_deposits_waste_type_id_foreign_idx');
-            $table->text('guidelines_content');
+            $table->integer('waste_type_id')->index('user_deposits_waste_type_id_foreign_idx')->nullable();
+            $table->text('guidelines_content')->nullable();
             $table->timestamps();
         });
     }

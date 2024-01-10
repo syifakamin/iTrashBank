@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('user_rewards', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id')->index('user_deposits_user_id_foreign_idx');
-            $table->integer('points_earned');
-            $table->text('reward_desc');
+            $table->integer('user_id')->index('user_deposits_user_id_foreign_idx')->nullable();
+            $table->integer('points_earned')->nullable();
+            $table->text('reward_desc')->nullable();
             $table->dateTime('reward_date')->nullable();
             $table->timestamps();
         });
