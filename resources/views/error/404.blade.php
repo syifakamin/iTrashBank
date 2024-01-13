@@ -1,3 +1,7 @@
+@extends('layouts.new-auth')
+
+
+
 <!DOCTYPE html>
 
 <!-- =========================================================
@@ -27,7 +31,7 @@
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Error - Pages | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    @section('page_title', __('404 Not Found'))
 
     <meta name="description" content="" />
 
@@ -72,7 +76,7 @@
     <div class="misc-wrapper">
         <h2 class="mb-2 mx-2">Page Not Found :(</h2>
         <p class="mb-4 mx-2">Oops! 😖 The requested URL was not found on this server.</p>
-        <a href="index.html" class="btn btn-primary">Back to home</a>
+        <a href="{{ route('login') }}" class="btn btn-primary">Back to Login</a>
         <div class="mt-3">
             <img
                 src="../assets/img/illustrations/page-misc-error-light.png"
@@ -89,14 +93,6 @@
 
 <!-- / Content -->
 
-<div class="buy-now">
-    <a
-        href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/"
-        target="_blank"
-        class="btn btn-danger btn-buy-now"
-    >Upgrade to Pro</a
-    >
-</div>
 
 <!-- Core JS -->
 <!-- build:js assets/vendor/js/core.js -->

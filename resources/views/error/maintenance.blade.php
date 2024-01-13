@@ -1,3 +1,4 @@
+@extends('layouts.new-auth')
 <!DOCTYPE html>
 
 <!-- =========================================================
@@ -27,7 +28,7 @@
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Under Maintenance - Pages | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    @section('page_title', __('Website Under Maintenance'))
 
     <meta name="description" content="" />
 
@@ -88,15 +89,6 @@
 <!-- /Under Maintenance -->
 
 <!-- / Content -->
-
-<div class="buy-now">
-    <a
-        href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/"
-        target="_blank"
-        class="btn btn-danger btn-buy-now"
-    >Upgrade to Pro</a
-    >
-</div>
 
 <!-- Core JS -->
 <!-- build:js assets/vendor/js/core.js -->
