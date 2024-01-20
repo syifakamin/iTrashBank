@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\adminController\guideRecycleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Route for auth (Login, Register, Forget Password. etc)
+require __DIR__ . '/auth.php';
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -26,6 +30,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('dashboard/guiderecycle', [guideRecycleController::class, 'show'])->name('guide.show');
 });
 
-require __DIR__.'/auth.php';
+//Group Route for Admin dashboard
+Route::middleware('auth', 'verified')->group(function () {
+
+
+    Route::get('dashboard/guiderecycle', [guideRecycleController::class, 'show'])->name('guide.show');
+});
