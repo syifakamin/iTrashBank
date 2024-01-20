@@ -41,6 +41,7 @@ sudah menginstall semua ini di environment / Has Install all environment
 $ Composer install
 $ npm install
 $ php artisan key:generate
+$ php artisan migrate
 $ php artisan serve
 ```
 

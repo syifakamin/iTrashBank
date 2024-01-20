@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('user_deposits', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id')->index('user_deposits_user_id_foreign_idx');
-            $table->integer('waste_type_id')->index('user_deposits_waste_type_id_foreign_idx');
+            $table->integer('user_id')->index('user_deposits_user_id_foreign_idx')->nullable();
+            $table->integer('waste_type_id')->index('user_deposits_waste_type_id_foreign_idx')->nullable();
             $table->decimal('weight')->nullable();
             $table->integer('points_earned')->nullable();
             $table->dateTime('deposit_date')->nullable();

@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('deposit_locations', function (Blueprint $table) {
             $table->id();
-            $table->string('location_name');
-            $table->text('address');
+            $table->string('location_name')->nullable();
+            $table->text('address')->nullable();
             $table->timestamps();
         });
     }

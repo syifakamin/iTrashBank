@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('user_feedback', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id')->index('user_deposits_user_id_foreign_idx');
-            $table->enum('feedback_type',['Umum','Kinerja','Pelayanan']);
-            $table->text('feedback_content');
+            $table->integer('user_id')->index('user_deposits_user_id_foreign_idx')->nullable();
+            $table->enum('feedback_type',['Umum','Kinerja','Pelayanan'])->nullable();
+            $table->text('feedback_content')->nullable();
             $table->timestamps();
         });
     }

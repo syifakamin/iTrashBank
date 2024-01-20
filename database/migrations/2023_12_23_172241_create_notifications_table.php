@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('notifications', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id')->index('user_deposits_user_id_foreign_idx');
-            $table->enum('notification_type',['Info','Promo','Lainnya']);
-            $table->text('content');
-            $table->boolean('is_read');
+            $table->integer('user_id')->index('user_deposits_user_id_foreign_idx')->nullable();
+            $table->enum('notification_type',['Info','Promo','Lainnya'])->nullable();
+            $table->text('content')->nullable();
+            $table->boolean('is_read')->nullable();
             $table->timestamps();
         });
     }

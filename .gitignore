@@ -2,7 +2,7 @@
 /node_modules
 /public/build
 /public/hot
-/public/storage
+# /public/storage
 /storage/*.key
 /vendor
 .env
@@ -18,3 +18,5 @@ yarn-error.log
 /.idea
 /.vscode
 .DS_Store
+/TARGET_TEMPLATE
+.TODO

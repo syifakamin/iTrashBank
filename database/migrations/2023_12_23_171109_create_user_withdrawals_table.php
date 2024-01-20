@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('user_withdrawals', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id')->index('user_deposits_user_id_foreign_idx');
-            $table->integer('waste_type_id')->index('user_deposits_waste_type_id_foreign_idx');
-            $table->decimal('weight');
+            $table->integer('user_id')->index('user_deposits_user_id_foreign_idx')->nullable();
+            $table->integer('waste_type_id')->index('user_deposits_waste_type_id_foreign_idx')->nullable();
+            $table->decimal('weight')->nullable();
             $table->dateTime('withdrawal_date')->nullable();
             $table->timestamps();
         });
